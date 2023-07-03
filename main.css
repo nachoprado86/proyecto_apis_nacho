@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: #e0c3a7;
+    color: #545454;
+}
+#cabecera {
+    display: flex;
+    height: 22vh;
+    background-color: #8b6d5a ;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+h1 {
+    color: #e0c3a7;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem
+    
+}
+}
+.navegador {
+    margin: 0;
+    margin: 1rem;
+    padding: 0rem;
+    border: #ca3568;
+    display: flex;
+    gap: 0 1rem ;
+}
+.selectable {
+    font-size: 1.1rem;
+    width: 100%;
+    height: 2rem;
+    background-color: #553f32;
+}
+.selectable:hover {
+    border: 2px solid #ffffff;
+}
+
+img {
+    height: 100%;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto 1rem;
+    flex-direction: column;
+}
+.articulo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    border: 1px solid #553f32;
+    padding: 1rem;
+}
+.articulo .divposter {
+    height: 25vh;
+    margin: auto;
+}
+.articulo .divinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.articulo .titulo {
+    color: #ca3568;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.articulo .titulo:hover {
+    color: #5ce1e6;
+}
+.articulo .descripcion {
+    font-size: 1rem;
+}
+.articulo button {
+    background-color: #5ce1e6;
+    width: 5rem;
+}
+.articulo button:hover{
+    background-color: #ca3568;
+}
+
+.articulo img {
+    height: 100%;
+}
+.articulo img:hover {
+    outline: 2px solid #553f32;
+    border-radius: 5px;
+}
+
+/* MOBILE FIRST */
+
+/* 440px */
+@media only screen and (min-width: 768px) {
+    section {
+        flex-direction: row;
+    }
+    .articulo {
+        display: flex;
+        gap: 1rem;
+        border: 1px solid #553f32;
+        padding: 1rem;
+        width: calc(50% - 1rem);
+    }
+}
+
+/* 768px */
+@media only screen and (min-width: 1024px) {
+    .articulo {
+        width: calc(50% - 1rem);
+        flex-wrap: nowrap;
+    }
+}

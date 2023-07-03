@@ -31,3 +31,5 @@ let body = document.querySelector("body");
 listaRecetas.forEach(element => {
     body.appendChild(element.render());
 });
+
+export default getData;

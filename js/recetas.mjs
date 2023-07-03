@@ -36,7 +36,7 @@ class Receta {
         this.ingredientes.forEach(element => {
             let li = document.createElement("li");
             console.log (element);
-            li.textContent =`${element.food}, ${element.quantity}`;
+            li.textContent =`${element.quantity} ${element.food}`;
             ulingredientes.appendChild(li);
         })
         articulo.appendChild(ulingredientes);
